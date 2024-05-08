@@ -25,10 +25,11 @@
     align-items: center;
     justify-content: center;
     margin: 50px;
-    background: url(Images/nairobi.jpg);
+    background: url(/Images/nairobi.jpg);
     opacity:0.9;
     background-size: cover;
     align-content:center;
+    background-position: center;
 }
 
 .hand{

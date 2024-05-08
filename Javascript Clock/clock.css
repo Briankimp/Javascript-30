@@ -1,5 +1,5 @@
 *{
-    background: yellowgreen;
+    background:url(Images/nairobi.jpg);
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -7,7 +7,7 @@
 }
 .clock{
     width: 100%;
-    background: rgb(110, 110, 201);
+    background: rgb(22, 22, 209);
     display: flex;
     align-items: center;
     align-content: center;
@@ -25,7 +25,7 @@
     align-items: center;
     justify-content: center;
     margin: 50px;
-    background: url(/Images/nairobi.jpg);
+    background: url(Images/nairobi.jpg);
     opacity:0.9;
     background-size: cover;
     align-content:center;

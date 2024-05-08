@@ -32,12 +32,12 @@
 
             
             const minutes = now.getMinutes();
-            const minuteDegrees = ((minutes/60)*360)+90;
+            const minuteDegrees = ((minutes / 60)* 360 )+ 90;
             minuteHand.style.transform=`rotate(${minuteDegrees}deg)`;
 
             
             const hour = now.getHours();
-            const hourDegrees = ((hours/60)*360)+90;
+            const hourDegrees = ((hours/60 )*360 )+ 90;
             hourHand.style.transform=`rotate(${hourDegrees}deg)`;
 
         }

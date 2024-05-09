@@ -36,8 +36,9 @@ h1{
 }
 
 .pressed{
-    box-shadow: 0 3px 4px 0 red;
+    box-shadow: 0 6px 10px 0 red;
     opacity: 0.6;
-    transform: scale(2);
+    transform: scale(1.2);
+    color: red;
 
 }

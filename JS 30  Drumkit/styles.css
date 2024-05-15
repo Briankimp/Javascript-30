@@ -1,0 +1,44 @@
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    background: greenyellow;
+    height: 100vh;
+    width:100%
+    just
+}
+.keys{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+
+}
+.key{
+    border: 5px black solid;
+    margin: 10px;
+    border-radius:15px;
+    padding:20px;  
+    align-items: center;
+
+}
+kbd{
+    font-size: 5rem;
+    display: block;
+    }
+
+.playing{
+    transform: scale(1.1);
+    border-color: red;
+    box-shadow: 0 0 1rem red;
+}
+
+.sound{
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    letter-spacing: 1rem;
+    color: red;
+}

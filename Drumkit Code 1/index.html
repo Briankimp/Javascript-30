@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Drum Kit</title>
+</head>
+<body>
+    <h1> DRUM KIT</h1>
+    <div class="Set">
+    
+    <button class="D drum">D</button>
+    <button class="R drum">R</button>
+    <button class="M drum">M</button>
+    <button class="F drum">F</button>
+    <button class="S drum">S</button>
+    <button class="L drum">L</button>
+    <button class="T drum">T</button>
+    </div>
+    
+    <script>
+        var numberOfDrumButtons=document.querySelectorAll(".drum").length;
+
+        for (var i=0; i<numberOfDrumButtons; i++){
+            document.querySelectorAll(".drum")[i].addEventListener("click" , function(){
+
+                var buttonInnerHTML=this.innerHTML;
+              
+                makeSound(buttonInnerHTML);
+                buttonAnimation(buttonInnerHTML);
+            });
+
+        document.addEventListener("keypress",
+        function(event){
+
+            makeSound(event.key);
+            buttonAnimation(event.key);
+        });
+
+        function makeSound(key){
+
+            switch(key){
+                         
+                case "D":
+                var boom=new Audio("Audio/sounds/boom.wav");
+                boom.play();
+                break;
+
+                case "R":
+                var clap=new Audio("Audio/sounds/clap.wav");
+                clap.play();
+                break;
+
+                case "M":
+                var hihat=new Audio("Audio/sounds/hihat.wav");
+                hihat.play();
+                break;
+
+                case "F":
+                var kick=new Audio("Audio/sounds/kick.wav");
+                kick.play();
+                break;
+
+                case "S":
+                var openhat=new Audio("Audio/sounds/openhat.wav");
+                openhat.play();
+                break;
+
+                case "L":
+                var ride=new Audio("Audio/sounds/ride.wav");
+                ride.play();
+                break;
+
+                case "T":
+                var snare=new Audio("Audio/sounds/snare.wav");
+                snare.play();
+                break;
+
+                defaultconsole.log(key);
+            }
+        }
+
+        function buttonAnimation(currentKey) {
+           var activeButton = document.querySelector( "." + currentKey + ".drum");
+            activeButton.classList.add("pressed");
+
+            setTimeout(function(){
+
+                activeButton.classList.remove("pressed");
+
+            },100);
+
+            /*function buttonAnimation(currentKey) {
+    var activeButton = document.querySelector("." + currentKey + ".drum");
+    activeButton.classList.add("pressed");
+
+    setTimeout(function () {
+        activeButton.classList.remove("pressed");
+    }, 100);*/
+}
+
+        }
+
+    
+    </script>
+
+    <div class="class f1"></div>
+</body>
+</html>

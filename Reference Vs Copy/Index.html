@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reference VS Copy </title>
+</head>
+<body>
+    <p>Check out the console window</p>
+
+    <script>
+        const  players = ['Brian', 'Sarah','Rian', 'Poppy'];
+
+
+        const team = players;
+        console.log(players, team);
+        players[3] = 'King';
+        //  console.log(team);
+        const team3 =[] .concat(players);
+        
+        const team2 = players.slice();
+        console.log(team3 );
+// ES6 SPread
+ const team4 =[...players];
+ team4[3] = 'Delete';
+ console.log(team4);
+
+const team5 = Array.from(players);
+team5[1] = 'top';
+console.log(team5);
+
+        const person = {
+            name :'Brian Munene', Age :20        
+        };
+
+        const captain = person;
+        captain.number = 90;
+ 
+
+const cap2 = Object.assign({}, person,{Age:99});
+console.log(cap2);
+
+
+
+
+
+
+
+    </script>
+    
+</body>
+</html>

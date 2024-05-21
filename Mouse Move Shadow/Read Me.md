@@ -1,3 +1,3 @@
-Fancy mOuse mOve shaddow.
-Learnt how to use offset to deal when dealing with  events.
- tis was a bit challenging and the logic behind it was thick.
+Fancy mouse move shaddow.
+Learnt how to use offset dealing with  events.
+this was a bit challenging and the logic behind it was thick.

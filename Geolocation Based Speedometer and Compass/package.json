@@ -1,0 +1,16 @@
+{
+  "name": "geolocation-based-speedometer-and-compass",
+  "version": "1.0.0",
+  "main": "index.js",
+  "description": "Your project description",
+  "main": "scripts.js",
+  "scripts": {
+    "start": "browser-sync start --server --files \"*.css, *.html, *.js\""
+  },
+  "author": "Your Name",
+  "license": "ISC",
+  "devDependencies": {
+    "browser-sync": "^2.12.5"
+  }
+}
+

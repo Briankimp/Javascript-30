@@ -1,0 +1,2 @@
+drush generate readme
+ 

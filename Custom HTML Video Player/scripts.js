@@ -11,6 +11,7 @@ function togglePlay() {
  
   const method = video. paused ? 'play' : 'pause';
   video[method]();
+  console.log(method);
 }
 
 function updateButton(){

@@ -1,0 +1,14 @@
+{
+  "name": "Unreal Webcam",
+  "version": "1.0.0",
+  "description": "Your project description",
+  "main": "scripts.js",
+  "scripts": {
+    "start": "browser-sync start --server --files \"*.css, *.html, *.js\""
+  },
+  "author": "MilkyWay",
+  "license": "ISC",
+  "devDependencies": {
+    "browser-sync": "^2.12.5"
+  }
+}
